@@ -17,7 +17,6 @@ html {
 	font-smoothing: antialiased;
 	-webkit-font-smoothing: antialiased;
 	text-shadow: rgb(0 0 0 / 1%) 0 0 1px;
-//	background: #fff;
 	min-width: 280px;
 	overflow-y: scroll;
 }
@@ -25,7 +24,6 @@ body {
 	background-image: none;
 	background-color: $sidebar-area-bg;
 	p {
-//		width: 80ch;
 		max-width: 100%;
 		line-height: calc(1ex / 0.4);
 		margin: calc(1ex / 0.4) 0;
@@ -59,12 +57,9 @@ a {
 	@extend .flex-column;
 	@extend .p-0;
 	flex: 0 0 100%;
-//	height: 100vh;
-//	height: inherit;
 	box-sizing: border-box;
 }
 #p-logo {
-//	@extend .d-flex;
 	@extend .flex-column;
 	@extend .justify-content-between;
 	height: $top-area-height;
@@ -81,7 +76,6 @@ a {
 		content: '';
 		display: block;
 		height: 1px;
-//		background-image: linear-gradient(to right,transparent,rgba(0,0,0,.1),rgba(0,0,0,.1),rgba(0,0,0,.1));
 		background-image: linear-gradient(to right,rgba(0,0,0,.1),rgba(0,0,0,.1));
 	}
 }
@@ -180,24 +174,20 @@ h2 {
 			}
 			.p-tb-dropdown {
 				@extend .w-100;
-//				&.show {
-					.p-tb-toggle {
-//						background: rgba(0,0,0,.025);
-						&[aria-expanded="true"]:after {
-							content: '\f192'
-						}
+				.p-tb-toggle {
+					background: rgba(0,0,0,.025);
+					&[aria-expanded="true"]:after {
+						content: '\f192'
 					}
-//				}
+				}
 			}
 		}
 	}
 	.dropdown-toggle {
 		text-transform: uppercase;
 		font-weight: bold;
-//		border-bottom: 1px solid rgba(0,0,0,.1);
 	}
 	.dropdown-menu {
-//		@extend .d-flex;
 		@extend .flex-column;
 		@extend .border-0;
 		@extend .shadow-none;
@@ -228,10 +218,6 @@ h2 {
 		&.dropdown {
 			@extend .d-flex;
 			@extend .flex-column;
-//			&.position-static {
-//				@extend .d-flex;
-//				@extend .flex-column;
-//			}
 			.nav-link {
 				@extend .d-flex;
 				@extend .justify-content-between;
@@ -249,14 +235,11 @@ h2 {
 					}
 				}
 			}
-//			&.show {
-				.dropdown-toggle {
-//					background: rgba(0,0,0,.025);
-					&[aria-expanded="true"]:after {
-						content: '\f192';
-					}
+			.dropdown-toggle {
+				&[aria-expanded="true"]:after {
+					content: '\f192';
 				}
-//			}
+			}
 			&:after {
 				@extend .d-block;
 				height: 1px;
@@ -328,7 +311,6 @@ h2 {
 	}
 	#mw-toc-heading {
 		@extend .h2;
-//		border-bottom: 1px solid #aaa;
 		@extend .border-0;
 		padding-bottom: 0.17em;
 	}
