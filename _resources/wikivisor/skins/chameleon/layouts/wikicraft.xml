@@ -30,7 +30,7 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
 				<component type="Html"><![CDATA[
 					<div id="p-logo" class="p-logo d-flex flex-column justify-content-between" role="banner">
 						<div class="d-flex flex-row justify-content-between">
-		                                        <a id="home-link" class="nav-link" href="/" title="Visit the main page">Wikicraft</a>			
+							<a id="home-link" class="nav-link" href="/" title="Visit the main page">Wikicraft</a>
 							<a href="#top-area" class="float-right d-cmln-none"><i class="fas fa-chevron-up small"></i></a>
 						</div>
 					</div>
@@ -50,17 +50,17 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
 					<component type="Html"><![CDATA[
 						<div id="p-logo" class="p-logo d-cmln-none" role="banner">
 							<a href="#sidebar-area" class="float-right"><i class="fas fa-bars small"></i></a>
-	        	                                <a id="home-link" class="nav-link" href="/" title="Visit the main page">Wikicraft</a>			
+							<a id="home-link" class="nav-link" href="/" title="Visit the main page">Wikicraft</a>
 						</div>
 					]]></component>
 					<component type="Container" class="search-wrapper d-flex justify-content-between px-cmln-4">
 						<component type="SearchBar" buttons="search"/>
-		                                <component type="Html"><modification type="HideFor" permission="edit" /><![CDATA[
-		                                        <a id="login-link" class="nav-link">Sign In</a>
-                		                ]]></component>
-		                                <component type="Html"><![CDATA[
-		                                        <a id="user-link" class="nav-link d-none d-cmln-block"></a>
-                		                ]]></component>
+							<component type="Html"><modification type="HideFor" permission="edit" /><![CDATA[
+								<a id="login-link" class="nav-link">Sign In</a>
+							]]></component>
+							<component type="Html"><![CDATA[
+								<a id="user-link" class="nav-link d-none d-cmln-block"></a>
+							]]></component>
 					</component>
 				</component>
 				<component type="Container" class="article-wrapper flex-fill py-3">
@@ -77,7 +77,7 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
 					<component type="FooterInfo"/>
 					<component type="FooterPlaces"/>
 				</component>
-			</cell>			
+			</cell>
 		</row>
 	</grid>
 </structure>
