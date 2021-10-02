@@ -49,7 +49,7 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
 				<component type="Container" id="top-area">
 					<component type="Html"><![CDATA[
 						<div id="p-logo" class="p-logo d-cmln-none" role="banner">
-							<a href="#sidebar-area" class="float-right"><i class="fas fa-bars"></i></a>
+							<a id="top" href="#sidebar-area" class="float-right"><i class="fas fa-bars"></i></a>
 							<a id="home-link" class="nav-link" href="/" title="Visit the main page">Wikicraft</a>
 						</div>
 					]]></component>
