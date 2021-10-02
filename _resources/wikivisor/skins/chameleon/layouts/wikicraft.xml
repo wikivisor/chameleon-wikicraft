@@ -74,6 +74,9 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
 						<modification type="ShowOnlyFor" namespace="NS_USER" />
 					</component>
 					<component type="MainContent"/>
+			                <component type="Html"><![CDATA[
+        	        		        <a href="#" id="back-to-top"></a>
+			                ]]></component>
 				</component>
 				<component type="Container" class="footer-area">
 					<component type="FooterInfo"/>

@@ -455,3 +455,33 @@ div {
 #footer-info-lastmod {
 	@extend .d-none;
 }
+#back-to-top {
+        height: 50px;
+        width: 50px;
+        @extend .d-flex;
+        @extend .align-items-center;
+        @extend .justify-content-center;
+        @extend .rounded-circle;
+        background: #151515;
+        border: 3px solid #fff;
+        outline: 3px solid #000;
+        opacity: .15;
+        position: fixed;
+        transition: all .3s ease-in-out;
+        visibility: hidden;
+        cursor: pointer;
+        pointer-events: initial !important;
+        z-index: 1060;
+        right: 2rem;
+        bottom: 2rem;
+        &:hover {
+                opacity: 1;
+                transform: rotate(180deg);
+                transition: transform 0.15s linear;
+		i {
+			transform: rotate(180deg);
+			transition: all .25s;
+		}
+	}
+}
+
