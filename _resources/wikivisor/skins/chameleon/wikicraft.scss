@@ -175,7 +175,6 @@ h2 {
 			.p-tb-dropdown {
 				@extend .w-100;
 				.p-tb-toggle {
-					background: rgba(0,0,0,.025);
 					&[aria-expanded="true"]:after {
 						content: '\f192'
 					}
@@ -235,11 +234,11 @@ h2 {
 					}
 				}
 			}
-			.dropdown-toggle {
-				&[aria-expanded="true"]:after {
-					content: '\f192';
+				.dropdown-toggle {
+					&[aria-expanded="true"]:after {
+						content: '\f192';
+					}
 				}
-			}
 			&:after {
 				@extend .d-block;
 				height: 1px;
@@ -352,18 +351,29 @@ h2 {
 div {
 	&#ca-edit {
 		height: 50px;
+		width: 50px;
 		margin-right: -.5rem;
 		@extend .d-flex;
-		@extend .align-items-end;
+		@extend .align-items-center;
 		@extend .justify-content-center;
+		@extend .rounded-circle;
+		background: #151515;
+		border: 3px solid #fff;
+		outline: 3px solid #000;
+		opacity: .15;
+		&:hover {
+			opacity: 1;
+			transform: rotate(180deg);
+			transition: transform 0.15s linear;
+		}
 	}
 	.ca-edit {
 		&:before {
-			content: "\f14b";
+			content: "\f246";
 			font-weight: bold !important;
 			font-size: 1.8rem;
-			margin: 0 !important;
-			color: #444;
+			margin: 2px 0 0 1px !important;
+			color: #fff;
 		}
 	}
 }
