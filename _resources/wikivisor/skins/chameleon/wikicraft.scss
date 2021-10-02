@@ -163,6 +163,9 @@ h2 {
 	#user-link {
 		@extend .d-none;
 	}
+	#p-personal {
+		@extend .d-none;
+	}
 }
 #sidebar-area {
 	.p-navbar {
@@ -222,6 +225,7 @@ h2 {
 					@include awesome;
 					content: '\f105';
 					color: #777;
+					@extend .mr-2;
 				}
 			}
 		}
@@ -305,7 +309,7 @@ h2 {
 		padding-left: 18px !important;
 	}
 	.p-navbar .navbar-nav .dropdown-menu > div > a:first-child:last-child:before {
-		margin-right: 6px !important;
+		margin-right: 1rem !important;
 	}
 }
 #toc {
@@ -447,4 +451,7 @@ div {
 		@extend .align-items-center;
 		@extend .justify-content-start;
 	}
+}
+#footer-info-lastmod {
+	@extend .d-none;
 }

@@ -49,18 +49,20 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
 				<component type="Container" id="top-area">
 					<component type="Html"><![CDATA[
 						<div id="p-logo" class="p-logo d-cmln-none" role="banner">
-							<a id="top" href="#sidebar-area" class="float-right"><i class="fas fa-bars"></i></a>
+							<a href="#sidebar-area" class="float-right"><i class="fas fa-bars"></i></a>
 							<a id="home-link" class="nav-link" href="/" title="Visit the main page">Wikicraft</a>
 						</div>
 					]]></component>
-					<component type="Container" class="search-wrapper d-flex justify-content-between px-cmln-4">
+					<component type="Container" class="search-wrapper d-flex justify-content-between align-items-center px-cmln-4">
 						<component type="SearchBar" buttons="search"/>
+						<component type="Container" class="d-flex justify-content-end align-items-center">
 							<component type="Html"><modification type="HideFor" permission="edit" /><![CDATA[
 								<a id="login-link" class="nav-link">Sign In</a>
 							]]></component>
 							<component type="Html"><![CDATA[
-								<a id="user-link" class="nav-link d-none d-cmln-block"></a>
+								<a id="user-link" class="nav-link d-none d-cmln-block px-0"></a>
 							]]></component>
+						</component>
 					</component>
 				</component>
 				<component type="Container" class="article-wrapper flex-fill py-3">
