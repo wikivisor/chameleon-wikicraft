@@ -158,6 +158,7 @@ h2 {
 	@extend .ml-auto;
 	@extend .text-nowrap;
 	@extend .text-dark;
+	z-index: 1040;
 }
 .notloggedin {
 	#user-link {
@@ -369,11 +370,13 @@ div {
 	&#ca-edit {
 		height: 50px;
 		width: 50px;
-		margin-right: -.5rem;
 		@extend .d-flex;
 		@extend .align-items-center;
 		@extend .justify-content-center;
 		@extend .rounded-circle;
+		@extend .position-fixed;
+		top: 160px;
+		right: 2rem;
 		background: #151515;
 		border: 3px solid #fff;
 		outline: 3px solid #000;
@@ -428,10 +431,8 @@ div {
 	}
 }
 @media screen and ( min-width: 1105px ) {
-div {
-	#ca-edit {
-		margin: 0 -1rem;
-	}
+#ca-edit {
+	top: 130px !important;
 }
 .action-edit, .ve-active {
 	#p-contentnavigation {
@@ -473,7 +474,7 @@ div {
         pointer-events: initial !important;
         z-index: 1060;
         right: 2rem;
-        bottom: 2rem;
+        bottom: 1rem;
         &:hover {
                 opacity: 1;
                 transform: rotate(180deg);
