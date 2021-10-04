@@ -111,6 +111,7 @@ a {
 	}
 }
 #p-search {
+	@extend .w-100;
 	* {
 		@extend .border-0;
 		background-image: none !important;
@@ -154,14 +155,20 @@ h2 {
 	justify-content: center;
 	flex-direction: column;
 }
-#user-link, #login-link {
-	@extend .d-block;
+#user-link, #login-link, #logout-link {
+	display: none;
 	@extend .w-100;
 	@extend .text-right;
 //	@extend .ml-auto;
 	@extend .text-nowrap;
 	@extend .text-dark;
 	z-index: 1040;
+}
+#pt-logout {
+	@extend .d-none;
+}
+.ns-2 #logout-link {
+	display: block;
 }
 .page-Special_UserLogin {
 	#login-link {
@@ -251,7 +258,7 @@ h2 {
 				@extend .d-flex;
 				@extend .justify-content-between;
 				&:hover {
-					background: rgba(0,0,0,.025);
+					background: linear-gradient(to right,transparent,rgba(0,0,0,0.025));
 				}
 				&:after {
 					@extend .border-0;
