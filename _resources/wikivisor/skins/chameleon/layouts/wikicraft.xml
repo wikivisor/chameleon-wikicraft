@@ -55,12 +55,12 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
 					]]></component>
 					<component type="Container" class="search-wrapper d-flex justify-content-between align-items-center px-cmln-4">
 						<component type="SearchBar" buttons="search"/>
-						<component type="Container" class="d-flex justify-content-end align-items-center w-100">
+						<component type="Container" class="d-flex justify-content-between align-items-center w-100">
 							<component type="Html"><modification type="HideFor" permission="edit" /><![CDATA[
-								<a id="login-link" class="nav-link float-right">Sign In</a>
+								<a id="login-link" class="nav-link">Sign In</a>
 							]]></component>
 							<component type="Html"><![CDATA[
-								<a id="user-link" class="nav-link d-none d-cmln-block px-0"></a>
+								<a id="user-link" class="nav-link"></a>
 							]]></component>
 						</component>
 					</component>

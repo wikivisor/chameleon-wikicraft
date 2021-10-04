@@ -155,14 +155,26 @@ h2 {
 	flex-direction: column;
 }
 #user-link, #login-link {
-	@extend .ml-auto;
+	@extend .d-block;
+	@extend .w-100;
+	@extend .text-right;
+//	@extend .ml-auto;
 	@extend .text-nowrap;
 	@extend .text-dark;
 	z-index: 1040;
 }
+.page-Special_UserLogin {
+	#login-link {
+		display: none !important
+	}
+}
 .notloggedin {
 	#user-link {
 		@extend .d-none;
+		@extend .order-3;
+	}
+	#login-link {
+		@extend .order-4;
 	}
 	#p-personal {
 		@extend .d-none;
