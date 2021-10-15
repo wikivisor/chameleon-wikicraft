@@ -40,6 +40,7 @@ $egChameleonLayoutFile = "$IP/extensions/wikivisor/skins/chameleon/layouts/wikic
 
 $egChameleonExternalStyleVariables = [
 	'container-max-widths' => '(sm: 540px, md: 768px, lg: 1105px, xl: 1440px)',
+	'font-size-base' => 'clamp(12px,calc(.8rem + .25vw),20px)',
 ];
 
 $egChameleonExternalStyleModules = [
