@@ -170,6 +170,9 @@ body {
 	&:before {
 		height: 0;
 	}
+	a {
+		@extend .text-dark;
+	}
 }
 #p-search {
 	@extend .w-100;
@@ -218,7 +221,7 @@ h2 {
 }
 #user-link, #login-link, #logout-link {
 	display: none;
-	@extend .w-100;
+	@extend .w-auto;
 	@extend .text-right;
 	@extend .text-nowrap;
 	z-index: 1040;
@@ -590,4 +593,9 @@ table, table th, table td,
 }
 .question-sup {
 	cursor: help;
+}
+.ve-init-mw-desktopArticleTarget-toolbar-opened {
+	top: 0;
+	position: sticky !important;
+	z-index: 1040;
 }
