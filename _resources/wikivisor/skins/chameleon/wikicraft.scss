@@ -23,7 +23,7 @@ $top-area-height: 80px;
 }
 
 a, a:visited { 
-	color: #3600ae !important 
+	color: #3600ae; 
 }
 a.new {
 	color: crimson !important;
@@ -272,7 +272,7 @@ h2 {
 					@extend .d-none;
 				}
 				&:hover {
-					background: linear-gradient(to right,transparent,rgba(0,0,0,0.025));
+//					background: linear-gradient(to right,transparent,rgba(0,0,0,0.025));
 				}
 			}
 			.p-tb-dropdown {
@@ -280,7 +280,7 @@ h2 {
 				@extend .px-0;
 				a {
 					&:hover {
-						background: linear-gradient(to right,transparent,rgba(0,0,0,0.025));
+//						background: linear-gradient(to right,transparent,rgba(0,0,0,0.025));
 					}
 				}
 				.p-tb-toggle {
@@ -308,7 +308,8 @@ h2 {
 		z-index: 1;
 		.nav-item {
 			.nav-link {
-				@extend .py-2;
+				padding-top: .1rem !important;
+				padding-bottom: .1rem !important;
 				@extend .pl-4;
 				font-size: .9rem;
 				justify-content: flex-start !important;
@@ -317,6 +318,12 @@ h2 {
 					@include awesome;
 					content: '\f105';
 					@extend .mr-2;
+					&:hover {
+						text-decoration: none !important;
+					}
+				}
+				&:hover {
+					text-decoration: underline !important;
 				}
 			}
 		}
@@ -329,7 +336,7 @@ h2 {
 				@extend .d-flex;
 				justify-content: start;
 				&:hover {
-					background: linear-gradient(to right,transparent,rgba(0,0,0,0.025));
+//					background: linear-gradient(to right,transparent,rgba(0,0,0,0.025));
 				}
 				&:after {
 					@extend .border-0;
@@ -444,7 +451,8 @@ h2 {
 }
 .dropdown-item.active,
 .p-navbar .navbar-nav .dropdown-menu > div > a.active:last-child:first-child,
-.p-navbar .navbar-nav .dropdown-menu > div > a:last-child:first-child:active {
+.p-navbar .navbar-nav .dropdown-menu > div > a:last-child:first-child:active,
+.p-navbar .navbar-nav .dropdown-menu > div > a:last-child:first-child:hover {
 	background: none !important;
 }
 #mw-indicator-smw-entity-examiner {

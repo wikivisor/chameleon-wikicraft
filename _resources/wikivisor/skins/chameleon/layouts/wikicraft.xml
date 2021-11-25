@@ -30,7 +30,7 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
 				<component type="Html"><![CDATA[
 					<div id="p-logo" class="p-logo d-flex flex-column justify-content-between" role="banner">
 						<div class="d-flex flex-row justify-content-between">
-							<a id="home-link" class="nav-link" href="/" title="Visit the main page">Wikicraft</a>
+							<a id="home-link" class="nav-link" href="/" title="Visit the main page">WikiVisor</a>
 							<a href="#top-area" class="float-right d-cmln-none"><i class="fas fa-chevron-up"></i></a>
 						</div>
 					</div>
@@ -50,7 +50,7 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
 					<component type="Html"><![CDATA[
 						<div id="p-logo" class="p-logo d-cmln-none" role="banner">
 							<a href="#sidebar-area" class="float-right"><i class="fas fa-bars"></i></a>
-							<a id="home-link" class="nav-link" href="/" title="Visit the main page">Wikicraft</a>
+							<a id="home-link" class="nav-link" href="/" title="Visit the main page">WikiVisor</a>
 						</div>
 					]]></component>
 					<component type="Container" class="search-wrapper d-flex justify-content-between align-items-center px-cmln-4">
@@ -59,7 +59,7 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
 							<component type="Html"><modification type="HideFor" permission="edit" /><![CDATA[
 								<a id="login-link" class="nav-link">Log in</a>
 							]]></component>
-							<component type="Html"><modification type="HideFor" namespace="NS_USER"/><![CDATA[
+							<component type="Html"><modification type="HideFor" namespace="NS_USER"/><modification type="ShowOnlyFor" permission="edit"/><![CDATA[
 								<a id="user-link" class="nav-link"></a>
 							]]></component>
 							<component type="Html"><modification type="ShowOnlyFor" permission="edit"/><![CDATA[
